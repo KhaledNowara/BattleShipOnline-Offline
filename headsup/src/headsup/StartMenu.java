@@ -75,19 +75,23 @@ public class StartMenu extends JFrame {
 		});
 		Play.setBackground(Color.GREEN);
 		Play.setFont(new Font("Snap ITC", Font.BOLD, 30));
-		Play.setBounds(750, 359, 300, 75);
+		Play.setBounds(798, 359, 300, 75);
 		panel.add(Play);
 		
 		PlayOnline = new JButton("Play Online");
+		PlayOnline.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
 		PlayOnline.setBackground(Color.YELLOW);
 		PlayOnline.setFont(new Font("Snap ITC", Font.BOLD, 30));
-		PlayOnline.setBounds(750, 447, 300, 75);
+		PlayOnline.setBounds(798, 447, 300, 75);
 		panel.add(PlayOnline);
 		
 		GameRules = new JButton("Game Rules");
 		GameRules.setBackground(Color.ORANGE);
 		GameRules.setFont(new Font("Snap ITC", Font.BOLD, 30));
-		GameRules.setBounds(750, 535, 300, 75);
+		GameRules.setBounds(798, 535, 300, 75);
 		panel.add(GameRules);
 		GameRules.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -102,7 +106,7 @@ public class StartMenu extends JFrame {
 		Exit = new JButton("Exit");
 		Exit.setBackground(Color.RED);
 		Exit.setFont(new Font("Snap ITC", Font.BOLD, 30));
-		Exit.setBounds(750, 711, 300, 75);
+		Exit.setBounds(798, 711, 300, 75);
 		panel.add(Exit);
 		Exit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -116,7 +120,11 @@ public class StartMenu extends JFrame {
 		panel.add(lblNewLabel);
 		
 		MusicOnOff = new JButton("Sound On");
-		MusicOnOff.setBounds(750, 623, 300, 75);
+		MusicOnOff.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		MusicOnOff.setBounds(798, 623, 300, 75);
 		MusicOnOff.setBackground(new Color(255, 102, 102));
 		MusicOnOff.setFont(new Font("Snap ITC", Font.BOLD, 30));
 		panel.add(MusicOnOff);

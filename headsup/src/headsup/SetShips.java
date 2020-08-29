@@ -39,6 +39,7 @@ import java.awt.Color;
 import java.awt.SystemColor;
 import java.awt.event.MouseMotionAdapter;
 import javax.swing.JScrollPane;
+import java.awt.Toolkit;
 
 public class SetShips extends JFrame {
 
@@ -69,6 +70,7 @@ public class SetShips extends JFrame {
 
 	
 	public SetShips() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage(SetShips.class.getResource("/headsup/Logo.png")));
 	
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1920,1080 );

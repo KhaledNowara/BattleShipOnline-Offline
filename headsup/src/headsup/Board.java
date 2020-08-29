@@ -38,6 +38,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JLayeredPane;
 import java.awt.GridBagLayout;
+import java.awt.Toolkit;
 
 public class Board extends JFrame {
 
@@ -58,6 +59,7 @@ public class Board extends JFrame {
 	JLabel time;
 	
 	public Board(ArrayList<String> list) {
+		setIconImage(Toolkit.getDefaultToolkit().getImage(Board.class.getResource("/headsup/Logo.png")));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1920, 1080);
 		contentPane = new JPanel();
