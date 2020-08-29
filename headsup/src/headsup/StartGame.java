@@ -426,6 +426,8 @@ public class StartGame {
 	
 	public static void GameOn (SetShips SetShips) {
 		board = new Board (SetShips.shipsLocation);
+		board.setExtendedState(JFrame.MAXIMIZED_BOTH);
+		board.setUndecorated (true);
 		client.game = board;
 		
 		board.Close.addActionListener(new ActionListener() {

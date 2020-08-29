@@ -23,6 +23,7 @@ import javax.swing.JButton;
 import javax.swing.JScrollPane;
 import javax.swing.JList;
 import javax.swing.JOptionPane;
+import java.awt.Toolkit;
 
 public class Lobby extends JFrame {
 
@@ -60,10 +61,11 @@ public class Lobby extends JFrame {
 	 * Create the frame.
 	 */
 	public Lobby() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage(Lobby.class.getResource("/headsup/NewLogo.png")));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1920, 1080);
 		contentPane = new JPanel();
-		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		contentPane.setBorder(new EmptyBorder(0, 0, 0, 0));
 		setContentPane(contentPane);
 		contentPane.setLayout(new GridLayout(1, 0, 0, 0));
 		

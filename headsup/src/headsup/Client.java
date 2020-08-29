@@ -119,6 +119,8 @@ public class Client extends Thread {
 					
 					JOptionPane.showMessageDialog(null, "Oponent Left");
 					Lobby Lobby = new Lobby ();
+					Lobby.setExtendedState(JFrame.MAXIMIZED_BOTH);
+					Lobby.setUndecorated (true);
 					this.lobby = Lobby;
 					Lobby.client = this;
 					Lobby.name = this.userName;
