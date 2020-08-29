@@ -105,6 +105,8 @@ public class StartGame {
 			public void actionPerformed (ActionEvent e) {
 				client = new Client ();
 				lobby = new Lobby ();
+				lobby.setExtendedState(JFrame.MAXIMIZED_BOTH);
+				lobby.setUndecorated (true);
 				client.lobby = lobby;
 				lobby.client = client;
 				client.start();

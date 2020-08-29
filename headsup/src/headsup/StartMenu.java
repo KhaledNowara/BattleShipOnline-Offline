@@ -108,7 +108,7 @@ public class StartMenu extends JFrame {
 		
 		lblNewLabel = new JLabel("");
 		lblNewLabel.setIcon(new ImageIcon(StartMenu.class.getResource("/headsup/NewLogo.png")));
-		lblNewLabel.setBounds(355, 13, 938, 291);
+		lblNewLabel.setBounds(479, 13, 938, 291);
 		panel.add(lblNewLabel);
 		
 		MusicOnOff = new JButton("Sound On");
