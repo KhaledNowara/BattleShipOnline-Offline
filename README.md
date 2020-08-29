@@ -1,6 +1,6 @@
 # BattleShipOnline-Offline
-This is a simple battleships game application msde using java. The game offfers offline and online mode 
-#Description 
+This is a simple battleships game application made using java. The game offfers offline and online mode. 
+# Description 
 the server package contains the server side and the headsup package contains the client side code and resources
 
 # Technologies used
