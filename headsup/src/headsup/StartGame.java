@@ -228,8 +228,8 @@ public class StartGame {
 	public static void PlayOnline () {
 		SetShips = new SetShips (); 
 		client.SetShips = SetShips;
-		//SetShips.setExtendedState(JFrame.MAXIMIZED_BOTH);
-		//SetShips.setUndecorated (true);
+		SetShips.setExtendedState(JFrame.MAXIMIZED_BOTH);
+		SetShips.setUndecorated (true);
 		timer60 time = new timer60(SetShips.timee,90);
 		Timer timer = new Timer ();
 		SetShips.setVisible(true);
