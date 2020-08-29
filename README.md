@@ -11,8 +11,10 @@ The server side was developed and tested on a kali linux machine with eclipse id
 
 # installation 
 you can download the .jar from the link below. 
+https://drive.google.com/drive/folders/1hbk3NUcLrQJOZhpsiPlruVYOzG8DA6p_?usp=sharing
 
-#disclamer 
+# disclamer 
+
 The server side is not hosted online. if you want to try the online mode you can run the server script on your machine (link posted below) and change the ip address of the 
 new socket in the Client class in the headsup package to the ip address of your machine. All machines connected to the your lan network will have access to the server
 
